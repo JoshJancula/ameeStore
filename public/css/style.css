@@ -8,11 +8,27 @@ body {
      background-size: auto;
 }
 
+#cartButton {
+    height: 90px;
+}
 
+.addButton {
+    height: 80px;
+    width: 200px;
+}
 
 .productImage {
     height: 200px;
     width: 200px;
+}
+
+.thumbnail, .caption {
+    background-color: #b2d8d8;
+}
+
+#contactModalButton {
+    margin-top: -15%;
+    margin-left: 45%;
 }
 
 .product {
@@ -27,6 +43,7 @@ body {
 
 .carousel-inner{
 margin: 8%;
+margin-left: 15%;
 width:100%
 }
 
@@ -65,7 +82,7 @@ width:100%
 }
     
     #ameeImage {
-    margin-left: 0%;
+    margin-left: 15%;
     width: 200px;
     height: 300px;
 }
@@ -75,7 +92,12 @@ width:100%
     width: 200px;
     height: 100px;
     margin-left: 0%;
-   
+}
+
+.product {
+    margin-left: 20%;
+    margin: 1%;
+    display: inline-block;
 }
 
 }

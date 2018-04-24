@@ -1,6 +1,7 @@
 window.onload = function() {
     $("#shoppingView").hide();
     $("#shoppingCart").hide();
+    $("#contactModalButton").hide();
     // get all product info
     $.ajax("/api/products/", {
         type: "GET",
@@ -50,4 +51,5 @@ window.onload = function() {
        $("#initialView").hide();
        $("#shoppingView").show();
        $("#shoppingCart").show();
+       $("#contactModalButton").show();
     });
