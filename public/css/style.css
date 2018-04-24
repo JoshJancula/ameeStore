@@ -3,9 +3,9 @@ body {
     min-height: 100%;
     flex-direction: column;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7hmWWeA322uCiSU4uQYlayWRGyG1CTxxSa9_BvhB6LoxWZSPCpw");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
      font-family: Bungee-inline;
-     background-size: cover;
+     background-size: auto;
 }
 
 
