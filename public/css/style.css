@@ -12,6 +12,10 @@ p {
     color: #CCFFFF;
 }
 
+input {
+    color: white;
+}
+
 #cartButton {
     height: 90px;
 }
@@ -69,8 +73,38 @@ p {
 
 /*  this is for tablets */
 
-@media screen and (max-width: 980px) and (min-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {}
+@media screen and (max-width: 980px) and (min-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        display: flex;
+        min-height: 100%;
+        flex-direction: column;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7hmWWeA322uCiSU4uQYlayWRGyG1CTxxSa9_BvhB6LoxWZSPCpw");
+        background-repeat: repeat;
+        font-family: Bungee-inline;
+        background-size: auto;
+    }
+#ameeImage {
+        /*margin-left: 15%;*/
+        width: 200px;
+        height: 300px;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    #pups {
+        display: none;
+        width: 200px;
+        height: 100px;
+        margin-left: 0%;
+    }
+    
+    .carousel-inner {
+    margin: 8%;
+    margin-left: 35%;
+    width: 100%
+}
+}
 
 
 /*  this is for phones */
@@ -88,9 +122,12 @@ p {
     }
 
     #ameeImage {
-        margin-left: 15%;
+        /*margin-left: 15%;*/
         width: 200px;
         height: 300px;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #pups {

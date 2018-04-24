@@ -8,10 +8,14 @@
 
     var messageInput = $("#message").val().trim();
     var nameInput = $("#name").val().trim();
-    var imageInput = $("#image").val()
+    // var imageInput = $("#image").val()
+    var imageInput = document.getElementById('image');
     var emailInput = $("#email").val().trim();
-  
+    var file;
     
+    imageInput.addEventListener('change', function(e) {
+     file = e.target.files[0];
+    });
     event.preventDefault();
     // Don't submit unless the form is complete...... they don't have to give phone#
     if (!nameInput || !emailInput || !messageInput) {
@@ -22,7 +26,7 @@
       name: nameInput,
       email: emailInput,
       message: messageInput,
-      attachments: imageInput
+      attachments: file
     
     }; // submit the new comment
    
@@ -36,7 +40,6 @@
    
   }
 
- 
 
   // Submits the message
   function submitMessage(message) { // and send thme back to homepage
@@ -49,7 +52,7 @@
           "<p>" + "message: " + message.message + "</p>",
         attachments: [{
             filename: false,
-            content: message.imageInput
+            content: message.file
         }]
 
       },

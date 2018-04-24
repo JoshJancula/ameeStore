@@ -19,6 +19,7 @@
   "homepage": "https://github.com/JoshJancula/ameeStore#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "connect-busboy": "0.0.2",
     "express": "^4.16.3",
     "fs": "0.0.1-security",
     "nodemailer": "^4.6.4",
