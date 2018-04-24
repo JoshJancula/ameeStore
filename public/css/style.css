@@ -1,11 +1,15 @@
 body {
-      display: flex;
+    display: flex;
     min-height: 100%;
     flex-direction: column;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7hmWWeA322uCiSU4uQYlayWRGyG1CTxxSa9_BvhB6LoxWZSPCpw");
     background-repeat: repeat;
-     font-family: Bungee-inline;
-     background-size: auto;
+    font-family: Bungee-inline;
+    background-size: auto;
+}
+
+p {
+    color: #CCFFFF;
 }
 
 #cartButton {
@@ -22,8 +26,10 @@ body {
     width: 200px;
 }
 
-.thumbnail, .caption {
-    background-color: #b2d8d8;
+.thumbnail,
+.caption {
+    background-color: #5bc0de;
+    ;
 }
 
 #contactModalButton {
@@ -41,10 +47,10 @@ body {
     margin-right: 5%;
 }
 
-.carousel-inner{
-margin: 8%;
-margin-left: 15%;
-width:100%
+.carousel-inner {
+    margin: 8%;
+    /*margin-left: 15%;*/
+    width: 100%
 }
 
 #ameeImage {
@@ -57,47 +63,64 @@ width:100%
     width: 320px;
     height: 300px;
     margin-left: 5%;
-   
+
 }
 
 
 /*  this is for tablets */
-@media screen and (max-width: 980px) and (min-width: 667px) and (-webkit-min-device-pixel-ratio: 2){
-    
-}
+
+@media screen and (max-width: 980px) and (min-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {}
 
 
 
 /*  this is for phones */
-@media screen and (max-width: 666px) and (min-width: 250px) and (-webkit-min-device-pixel-ratio: 2){
-    
+
+@media screen and (max-width: 666px) and (min-width: 250px) and (-webkit-min-device-pixel-ratio: 2) {
+
     body {
-      display: flex;
-    min-height: 100%;
-    flex-direction: row;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7hmWWeA322uCiSU4uQYlayWRGyG1CTxxSa9_BvhB6LoxWZSPCpw");
-    background-repeat: repeat;
-     font-family: Bungee-inline;
-     background-size: auto;
-}
-    
+        display: flex;
+        min-height: 100%;
+        flex-direction: row;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7hmWWeA322uCiSU4uQYlayWRGyG1CTxxSa9_BvhB6LoxWZSPCpw");
+        background-repeat: repeat;
+        font-family: Bungee-inline;
+        background-size: auto;
+    }
+
     #ameeImage {
-    margin-left: 15%;
-    width: 200px;
-    height: 300px;
-}
+        margin-left: 15%;
+        width: 200px;
+        height: 300px;
+    }
 
-#pups {
-    display: none;
-    width: 200px;
-    height: 100px;
-    margin-left: 0%;
-}
+    #pups {
+        display: none;
+        width: 200px;
+        height: 100px;
+        margin-left: 0%;
+    }
 
-.product {
-    margin-left: 20%;
-    margin: 1%;
-    display: inline-block;
-}
+    .product {
+        margin: 1%;
+        margin-left: 15%;
+        display: inline-block;
+    }
+
+    #cartButton {
+        height: 90px;
+        margin-left: 5%;
+    }
+
+    #contactModalButton {
+        margin-top: -5%;
+        margin-left: 35%;
+        margin-bottom: 3%;
+    }
+
+    #customInfo {
+        margin-top: 15%;
+        margin-right: 0%;
+    }
+
 
 }

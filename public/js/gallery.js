@@ -18,7 +18,7 @@ window.onload = function() {
           let panel = $("<div class='product'>").append(
               "<div class='thumbnail'><div class='caption'>" +
                 "<img class='productImage' src='" + image + "'>" + 
-                 "<h3>"  + name + "</h3>" +
+                 "<h3 style='color: #CCFFFF;'>"  + name + "</h3>" +
               "<br>" + button +
               "</div>" +
               "</div>"
