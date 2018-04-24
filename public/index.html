@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Playball" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.0.min.js " integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin=" anonymous "></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class='container'>
+        <div class="row">
+
+            <h3>Amiable Creations Logo Here</h3>
+        </div>
+
+        <div class='row' id='initialView'>
+            <div class='col-md-3'></div>
+            <div class='col-md-6'>
+                <div class='row'>
+                <div class='panel'>
+                    <div class='panel-body'>
+                        <!--<div class='row'>-->
+                        <div class='row'>
+                            <div class='col-md-4 col-sm-12'>
+                                <img id='ameeImage' src='./images/ameeImage.jpg'>
+                            </div>
+                            <div class='col-md-8 col-sm-12'>
+                                 <img id='pups' src='https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/16473479_10208681030118951_4513319248443862185_n.jpg?_nc_cat=0&oh=20d03b7080bf54b63a4b482633a92b44&oe=5B648BE2'>
+                            </div>
+                        </div>
+                            <div class='row'>
+                        <h4>Hey I'm Amee and Welcome to Amiable-Creations!!!!!!!!</h4>
+                        <p>I love making stuff, so if you want to buy some of my stuff or have me make some stuff for you  <button type="button" class="btn btn-primary btn-lg" id='switchView'>Click Here!</button> Thank You! I hope you love my stuff! </p>
+                        </div>
+                    <!--</div>-->
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class='col-md-3'></div>
+        </div>
+        <div class="row" id='shoppingView'>
+
+            <!--<div class='col-md-1'></div>-->
+            <div class='col-md-9 col-sm-12'>
+
+                <div class="container" id="productArea">
+                    <div id="custom"></div>
+                    <div id="shirts"></div>
+                    <div id="mugs"></div>
+                </div>
+            </div>
+            <div class='col-md-3 col-sm-12'>
+
+                <div class="row">
+                    <div class="thumbnail" id='customInfo'>
+                        <div class="caption">
+                            <h3>Make It Your Own!</h3>
+                            
+                        </div>
+                        <div id="carousel-example-generic" class="carousel">
+                       
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <div class="row">
+                                        <div id='customShirt'></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div id='customMug'></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!--Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span> </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span> </a>
+                        </div>
+                        
+                        <p>Want a custom image instead of text?<br>
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#customImage">Click Here!</button>
+                            </p>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contactModal">Contact Me!</button>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        
+        <!--end main container-->
+    </div>
+
+
+    <!-- want custom image modal -->
+    <div id="customImage" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title"><strong>Want a Custom Image Instead?</strong></h2>
+                </div>
+                <div class="modal-body">
+                    <h2>Just say so in the input field! Then contact me with your name, order # and the image you'd like and I'll make it Super Pretty! </h2>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" id="closeModal" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--end custom image modal-->
+    
+    
+    
+    <!-- contact modal -->
+    <div id="contactModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title"><strong>Contact</strong></h2>
+                </div>
+                <div class="modal-body">
+                    <form role="form" method="post" id="reused_form" enctype=&quot;multipart/form-data&quot; >
+                        <div class="form-group">
+                            <label for="name"> Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="email"> Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="name"> Message:</label>
+                            <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="name"> Image Upload:</label>
+                            <input type="file" class="form-control" id="image" name="image" required>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-lg btn-success pull-right" id="submitButton">Send! &rarr;</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--contact modal-->
+
+    <script>
+        $(document).ready(function() {
+            $('.carousel').carousel({
+                interval: false
+            })
+        });
+    </script>
+    <script src='./js/gallery.js'></script>
+    <script src='./js/contact.js'></script>
+</body>
+
+</html>
