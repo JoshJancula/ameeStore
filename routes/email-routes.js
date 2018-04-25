@@ -18,19 +18,18 @@ app.get('/',function(req,res){
     res.sendfile('index.html');
 });
 app.get('/send',function(req,res){
-    
+   
     var mailOptions={
         to : req.query.to,
         subject : req.query.subject,
         html : req.query.html,
-        attachments : [
-            {   // stream as an attachment
-            filename: "new.png",
-            filePath: new Buffer(req.query.attachments)
-            // filePath: req.query.attachments
-           
-        },
-            ]
+        attachments : req.query.attachments
+        // [
+        //     {   // stream as an attachment
+        //     filename: false,
+        //     content: req.query.attachments
+        // },
+            // ]
     }
     console.log(mailOptions);
     smtpTransport.sendMail(mailOptions, function(error, response){

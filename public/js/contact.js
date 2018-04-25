@@ -2,6 +2,18 @@
 
   // Adding an event listener for when the form is submitted
   $("#submitButton").on('click', handleFormSubmit);
+  var image; // convert the image to base64 so nodemailer can send it
+  const input = document.getElementById("image");
+  const reader = new FileReader;
+  reader.onload = () => {
+    const dataURL = reader.result;
+    const base64 = reader.result.split(",").pop();
+    image = base64;
+  }
+  input.onchange = () => {
+    reader.abort();
+    reader.readAsDataURL(input.files[0]);
+  }
 
   // A function for handling what happens when the form to create a new message
   function handleFormSubmit(event) {
@@ -11,13 +23,9 @@
     // var imageInput = $("#image").val()
     var imageInput = document.getElementById('image');
     var emailInput = $("#email").val().trim();
-    var file;
     
-    imageInput.addEventListener('change', function(e) {
-     file = e.target.files[0];
-    });
     event.preventDefault();
-    // Don't submit unless the form is complete...... they don't have to give phone#
+    // Don't submit unless the form is complete
     if (!nameInput || !emailInput || !messageInput) {
       return;
     }
@@ -26,7 +34,10 @@
       name: nameInput,
       email: emailInput,
       message: messageInput,
-      attachments: file
+      attachments: [{
+          filename: false,
+          content: image
+      }]
     
     }; // submit the new comment
    
@@ -50,10 +61,7 @@
         html: "<h3>" + "name: " + message.name + "</h3>" + "<br>" +
           "<h4>" + "email: " + message.email + "</h4>" +
           "<p>" + "message: " + message.message + "</p>",
-        attachments: [{
-            filename: false,
-            content: message.file
-        }]
+        attachments: message.attachments
 
       },
       function(data) {
