@@ -16,6 +16,10 @@ input {
     color: white;
 }
 
+#customShirt, #customMug, #shirts, #mugs {
+    overflow: scroll;
+}
+
 #cartButton {
     height: 90px;
 }

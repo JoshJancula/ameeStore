@@ -7,7 +7,7 @@ var smtpTransport = nodemailer.createTransport({
     service: "gmail",
     host: "joshjanculawebpage@gmail.com",
     auth: {
-        user: "jamclashwebpage@gmail.com",
+        user: "joshjanculawebpage@gmail.com",
         pass: "gmailPassword"
     }
 });
@@ -23,13 +23,6 @@ app.get('/send',function(req,res){
         to : req.query.to,
         subject : req.query.subject,
         html : req.query.html,
-        attachments : req.query.attachments
-        // [
-        //     {   // stream as an attachment
-        //     filename: false,
-        //     content: req.query.attachments
-        // },
-            // ]
     }
     console.log(mailOptions);
     smtpTransport.sendMail(mailOptions, function(error, response){

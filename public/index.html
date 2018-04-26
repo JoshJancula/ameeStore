@@ -69,15 +69,14 @@
         <div class="row" id='shoppingView'>
 
             <!--<div class='col-md-1'></div>-->
-            <div class='col-md-9 col-sm-12'>
+            <div class='col-md-9 col-sm-12 container'>
 
-                <div class="container" id="productArea">
-                    <div id="custom"></div>
+                <div id="productArea">
                     <div id="shirts"></div>
                     <div id="mugs"></div>
                 </div>
             </div>
-            <div class='col-md-3 col-sm-12'>
+            <div class='col-md-3 col-sm-12 container'>
 
                 <div class="row">
                     <div class="panel" style='background: #5bc0de;' id='customInfo'>
@@ -190,6 +189,10 @@
     </div>
     <!--contact modal-->
 
+    
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script src='./js/gallery.js'></script>
+    <script src='./js/contact.js'></script>
     <script>
         $(document).ready(function() {
             $('.carousel').carousel({
@@ -197,8 +200,6 @@
             })
         });
     </script>
-    <script src='./js/gallery.js'></script>
-    <script src='./js/contact.js'></script>
 </body>
 
 </html>
