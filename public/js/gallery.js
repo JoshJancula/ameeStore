@@ -1,3 +1,4 @@
+
 window.onload = function() {
     $("#shoppingView").hide();
     $("#shoppingCart").hide();
@@ -46,10 +47,11 @@ window.onload = function() {
 
 
 
-// custom shirt button
+// switch view button
     $("#switchView").on("click", function(event) {
        $("#initialView").hide();
        $("#shoppingView").show();
        $("#shoppingCart").show();
        $("#contactModalButton").show();
     });
+

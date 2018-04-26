@@ -12,7 +12,8 @@ p {
     color: #CCFFFF;
 }
 
-input {
+#contactModalButton, #wantButton {
+    background-color: #78909c;
     color: white;
 }
 
