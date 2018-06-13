@@ -18,112 +18,96 @@
 </head>
 
 <body>
+
+
     <div class='container'>
-        <div class="row">
-            <div class='col-md-10'>
-            <h2>Amiable Creations Logo Here</h2>
-            </div>
-            <div class='col-md-2'>
-                
-                <!--this is where the ungodly amount of code for the view shoppoing cart begins-->
-                <form id='shoppingCart' target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+
+        <div class="jumbotron">
+            <img id='logoImage' src='https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/34872003_239394533489005_8093645090813116416_o.jpg?_nc_cat=0&_nc_eui2=AeGlNLHAtoq2kfRvyFwwVc5PGDer4vKFFM_kEIh_aFIJWKCYbDFBsjCOCOLLmW-t0gidGLGoqqyb1WN6NxPGKHd3ttQNfa3seINWBF1KtQxCUg&oh=10c5f9451e65c90bbbd55c4aa7ea8c40&oe=5BC0D1E6'>
+
+            <!--begin buttons-->
+            <div class='row' id='buttons'>
+                <div class='col-lg-4 col-md-12 col-sm-12'>
+                    <form id='shoppingCart' target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
 <input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
 ">
-<input type="image"id='cartButton' src="https://www.jewelsofjudaism.com/wp-content/uploads/2014/07/view-cart-button-large.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0"  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+<input type="image" id='cartButton' src="/images/cartButton.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
-<br>
-<button type="button" id='contactModalButton' class="btn btn-lg" data-toggle="modal" data-target="#contactModal">Contact Me!</button>
-<!--this is where that giant block of code ends-->
+
+                </div>
+                <!--this is where that giant button ends-->
+                <!--<br>-->
+                <div class='col-lg-4 col-md-12 col-sm-12'>
+                    <button type="button" id='contactModalButton' class="btn btn-lg" data-toggle="modal" data-target="#contactModal">Contact Me!</button>
+                   <br>
+                    <button id='viewShirt' type='button' class='btn btn-primary' data-toggle'modal' data-target='#shirtsModal'>View shirt types</button>
+                    <br>
+                    <button type="button" id='wantButton' class="btn btn-lg" data-toggle="modal" data-target="#customImage">Custom Image</button><br>
+                    <button type="button" id='colorsButton' class="btn  btn-primary" data-toggle="modal" data-target="#colorsModal">View shirt colors</button>
+                </div>
+                <div class='col-lg-4 col-md-12 col-sm-12'>
+
+
+                    <div class="form-group" id='sortBy'>
+                        <label for="sortBy">Sort Products By:</label>
+                        <select class="form-control" id="sortSelect" onchange="checkSort()">
+                            <option value='all'>All Products</option>
+                            <option value='shirts'>Shirts</option>
+                            <option value='mugs'>Mugs and Tumblers</option>
+                            <option value='decals'>Decals</option>
+                            <option value='originals'>One of a Kinds</option>
+                            <option value='custom'>Special Orders</option>
+                          </select>
+                    </div>
+                </div>
+            </div>
+            <!--end buttons-->
+
+            <div class='row' id='initialView'>
+                <div class='col-md-2 col-sm-1'></div>
+                <div class='col-md-8 col-sm-10'>
+                    <div class='row'>
+                        <div class='panel' style='background: #5bc0de;'>
+                            <div class='panel-body'>
+                                <!--<div class='row'>-->
+                                <div class='row'>
+                                    <div class='col-lg-4  col-md-4 col-sm-12'>
+                                        <img id='ameeImage' src='./images/ameeImage.jpg'>
+                                    </div>
+                                    <div class='col-lg-8 col-md-8 col-sm-12'>
+                                        <img id='pups' src='https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/16473479_10208681030118951_4513319248443862185_n.jpg?_nc_cat=0&oh=20d03b7080bf54b63a4b482633a92b44&oe=5B648BE2'>
+                                    </div>
+                                </div>
+                                <div class='row'>
+                                    <!--<div class='container'>-->
+                                    <h4 style='color: #CCFFFF; text-align: center;'>Hey I'm Amee and Welcome to Amiable-Creations!!!!!!!!</h4>
+                                    <p style='text-align: center;'>I love making stuff, so if you want to buy some of my stuff or have me make some stuff for you <button type="button" class="btn btn-primary btn-sm" id='switchView'>Click Here!</button> Thank You!!! I really hope you
+                                        love my stuff! </p>
+                                    <!--</div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-md-2 col-sm-1'></div>
             </div>
         </div>
 
-        <div class='row' id='initialView'>
-            <div class='col-md-2 col-sm-1'></div>
-            <div class='col-md-8 col-sm-10'>
-                <div class='row'>
-                <div class='panel' style='background: #5bc0de; margin: 10%'>
-                    <div class='panel-body'>
-                        <!--<div class='row'>-->
-                        <div class='row'>
-                            <div class='col-lg-4  col-md-4 col-sm-12'>
-                                <img id='ameeImage' src='./images/ameeImage.jpg'>
-                            </div>
-                            <div class='col-lg-8 col-md-8 col-sm-12'>
-                                 <img id='pups' src='https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/16473479_10208681030118951_4513319248443862185_n.jpg?_nc_cat=0&oh=20d03b7080bf54b63a4b482633a92b44&oe=5B648BE2'>
-                            </div>
-                        </div>
-                            <div class='row'>
-                                <!--<div class='container'>-->
-                        <h4 style='color: #CCFFFF; text-align: center;'>Hey I'm Amee and Welcome to Amiable-Creations!!!!!!!!</h4>
-                        <p style='text-align: center;'>I love making stuff, so if you want to buy some of my stuff or have me make some stuff for you  <button type="button" class="btn btn-primary btn-sm" id='switchView'>Click Here!</button>  Thank You!!! I really hope you love my stuff! </p>
-                        <!--</div>-->
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-            <div class='col-md-8 col-sm-1'></div>
-        </div>
+
+
         <div class="row" id='shoppingView'>
-
-            <!--<div class='col-md-1'></div>-->
-            <div class='col-md-9 col-sm-12 container'>
-
-                <div id="productArea">
-                    <div id="shirts"></div>
-                    <div id="mugs"></div>
-                </div>
-            </div>
-            <div class='col-md-3 col-sm-12 container'>
-
-                <div class="row">
-                    <div class="panel" style='background: #5bc0de;' id='customInfo'>
-                        <div class="panel-body" style='background: #5bc0de;'>
-                            <h3 style='color: #CCFFFF; text-align: center;'>Make It Your Own!</h3>
-                            
-                        </div>
-                        <div id="carousel-example-generic" class="carousel">
-                       
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <div class="row">
-                                        <div id='customShirt'></div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="row">
-                                        <div id='customMug'></div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <!--Controls -->
-                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span> </a>
-                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span> </a>
-                        </div>
-                        
-                        <p style='text-align: center;'>Want a custom image instead of text?<br>
-                                <button type="button" id='wantButton' class="btn btn-lg" data-toggle="modal" data-target="#customImage">Click Here!</button>
-                            </p>
-                    </div>
-                    
-                </div>
-            </div>
-            
+            <div id="productArea"></div>
+            <div id='shirts'></div>
+            <div id='decals'></div>
+            <div id='mugs'></div>
+            <div id='originals'></div>
+            <div id='custom'></div>
         </div>
-        
-        
-        
-        <!--end main container-->
+
     </div>
-
-
+    <!--end main container-->
     <!-- want custom image modal -->
     <div id="customImage" class="modal fade" role="dialog">
         <div class="modal-dialog">
@@ -146,9 +130,9 @@
         </div>
     </div>
     <!--end custom image modal-->
-    
-    
-    
+
+
+
     <!-- contact modal -->
     <div id="contactModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
@@ -160,7 +144,7 @@
                     <h2 class="modal-title"><strong>Contact</strong></h2>
                 </div>
                 <div class="modal-body">
-                    <form role="form" method="post" id="reused_form" enctype=&quot;multipart/form-data&quot; >
+                    <form role="form" method="post" id="reused_form" enctype=&quot;multipart/form-data&quot;>
                         <div class="form-group">
                             <label for="name"> Name:</label>
                             <input type="text" class="form-control" id="name" name="name" required maxlength="50">
@@ -177,7 +161,7 @@
                             <label for="name"> Image Upload:</label>
                             <input type="file" class="form-control" id="image" value='upload' name="image" required>
                         </div>
-                        
+
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -188,18 +172,188 @@
         </div>
     </div>
     <!--contact modal-->
-
     
+    
+    
+    <!-- colors modal -->
+    <div id="colorsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class='colors' id='blue' style='color: white'>Royal Blue</div>
+                    <div class='colors' style='color: white' id='red'>Red</div>
+                    <div class='colors' style='color: white' id='black'>Black</div>
+                    <div class='colors' id='white'>White</div>
+                    <div class='colors' id='ashGrey'>Ash Grey</div>
+                    <div class='colors' id='pink'>Pink</div>
+                    <div class='colors' id='purple'>Purple</div>
+                    <div class='colors' id='sportGrey'>Sports Grey</div>
+                   
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" id="closeModal" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--end custom image modal-->
+    
+    
+
+
+    <!--shirts modal-->
+    <div class="modal fade" id='shirtsModal'  role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#mens" data-slide-to="0" class="active"></li>
+                        <li data-target="#womens" data-slide-to="1"></li>
+                        <li data-target="#womensR" data-slide-to="2"></li>
+                        <li data-target="#mensRag" data-slide-to="3"></li>
+                        <li data-target="#womensRag" data-slide-to="4"></li>
+                        <li data-target="#unisex" data-slide-to="5"></li>
+                        <li data-target="#youth" data-slide-to="3"></li>
+                      </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active" id='mens'>
+                            <img class="img-responsive" src="https://shirtspacev4productimages.s3.amazonaws.com/uploads/variant/front_image/57637/large_G500_51.jpg" alt="...">
+                            <div class="carousel-caption">
+                                Men’s T-Shirt
+                            </div>
+                        </div>
+                        <div class="item" id='womens'>
+                            <img class="img-responsive" src="https://shirtspacev4productimages.s3.amazonaws.com/uploads/variant/front_image/58183/large_G500L_66.jpg" alt="...">
+                            <div class="carousel-caption">
+                                Women's T-Shirt
+                            </div>
+                        </div>
+                        <div class="item" id='womensR'>
+                            <img class="img-responsive" src="https://shirtspacev4productimages.s3.amazonaws.com/uploads/variant/front_image/269604/cell_B6008_5420180327-3-etgc8d.jpg" alt="...">
+                            <div class="carousel-caption">
+                                Women’s Racerback Tank
+                            </div>
+                        </div>
+                        <div class="item" id='mensRag'>
+                            <img class="img-responsive" src="https://shirtspacev4productimages.s3.amazonaws.com/uploads/variant/front_image/274573/large_G570_6620180419-3-1jp7n4a.jpg" alt="...">
+                            <div class="carousel-caption">
+                                Men’s Raglan Shirts
+                            </div>
+                        </div>
+                        <div class="item" id='womensRag'>
+                            <img class="img-responsive" src="https://shirtspacev4productimages.s3.amazonaws.com/uploads/variant/front_image/168306/large_6051_98_z.jpg" alt="...">
+                            <div class="carousel-caption">
+                               Women’s Raglan Shirts
+                            </div>
+                        </div>
+                        <div class="item" id='unisex'>
+                            <img class="img-responsive" src="https://shirtspacev4productimages.s3.amazonaws.com/uploads/variant/front_image/58331/large_G540_95.jpg" alt="...">
+                            <div class="carousel-caption">
+                                Unisex Long Sleeve Shirt
+                            </div>
+                        </div>
+                        <div class="item" id='youth'>
+                            <img class="img-responsive" src="https://shirtspacev4productimages.s3.amazonaws.com/uploads/variant/front_image/164386/large_G500B_A2_z.jpg" alt="...">
+                            <div class="carousel-caption">
+                                Youth T-Shirts
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!--end shirts modal-->
+
+
     <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
     <script src='./js/gallery.js'></script>
     <script src='./js/contact.js'></script>
-    <script>
+     <script>
         $(document).ready(function() {
             $('.carousel').carousel({
                 interval: false
             })
         });
     </script>
+    <script>
+        function checkSort() {
+            let x = document.getElementById("sortSelect").value;
+            console.log('x = ' + x)
+            if (x === "shirts") {
+                $("#shirts").show();
+                console.log('should be showing shirts')
+                $('#productArea').hide()
+                $('#mugs').hide()
+                $('#decals').hide()
+                $('#originals').hide()
+                $('#custom').hide()
+            }
+            if (x === "mugs") {
+                $("#mugs").show();
+                console.log('should be showing mugs')
+                $('#productArea').hide()
+                $('#shirts').hide()
+                $('#decals').hide()
+                $('#originals').hide()
+                $('#custom').hide()
+            }
+            if (x === "decals") {
+                $("#decals").show();
+                console.log('should be showing decals')
+                $('#productArea').hide()
+                $('#mugs').hide()
+                $('#shirts').hide()
+                $('#originals').hide()
+                $('#custom').hide()
+            }
+            if (x === "originals") {
+                $("#originals").show();
+                console.log('should be showing originals')
+                $('#productArea').hide()
+                $('#mugs').hide()
+                $('#decals').hide()
+                $('#shirts').hide()
+                $('#custom').hide()
+            }
+            if (x === "custom") {
+                $("#custom").show();
+                console.log('should be showing custom')
+                $('#productArea').hide()
+                $('#mugs').hide()
+                $('#decals').hide()
+                $('#shirts').hide()
+                $('#originals').hide()
+            }
+            if (x === "all") {
+                $("#productArea").show();
+                console.log('should be showing all')
+                $('#originals').hide()
+                $('#mugs').hide()
+                $('#decals').hide()
+                $('#shirts').hide()
+                $('#custom').hide()
+            }
+        }
+    </script>
+
 </body>
 
 </html>

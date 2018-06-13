@@ -3,6 +3,7 @@ body {
     min-height: 100%;
     flex-direction: column;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7hmWWeA322uCiSU4uQYlayWRGyG1CTxxSa9_BvhB6LoxWZSPCpw");
+    /*background-image: url('https://assets.bigcartel.com/product_images/206890085/6798-11+600.jpg?auto=format&fit=max&h=1000&w=1000');*/
     background-repeat: repeat;
     font-family: Bungee-inline;
     background-size: auto;
@@ -10,6 +11,46 @@ body {
 
 p {
     color: #CCFFFF;
+}
+
+#pink {
+    background-color: #f8bbd0;
+}
+
+#white {
+    background-color: white;
+    border: solid black 2px;
+}
+
+#blue {
+    background-color: #0d47a1;
+}
+
+#black {
+    background-color: #263238;
+}
+
+#purple {
+    background-color: #b39ddb;
+}
+
+#ashGrey {
+    background-color: #e0e0e0;
+}
+
+#red {
+    background-color: #c62828;
+}
+
+#sportGrey {
+    background-color: #eeeeee;
+}
+
+.colors {
+    height: 90px;
+    width: 90px;
+    margin: 3%;
+    display: inline-block;
 }
 
 #contactModalButton, #wantButton {
@@ -25,30 +66,56 @@ p {
     height: 90px;
 }
 
+#sortBy {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+
+
 .addButton {
     height: 80px;
     width: 200px;
 }
 
-.productImage {
+#logoImage {
+    margin-top: -5%;
     height: 200px;
-    width: 200px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.jumbotron {
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 5%;
+    background-color: white !important;
+    /*background-image: url('https://assets.bigcartel.com/product_images/206890085/6798-11+600.jpg?auto=format&fit=max&h=1000&w=1000');*/
+        /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7hmWWeA322uCiSU4uQYlayWRGyG1CTxxSa9_BvhB6LoxWZSPCpw");*/
+    /*    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoqJ_fq2wmvEbWrhXsZjclkBC5AkX_CisqibfWAxeklU_v24CxBg');*/
+
+}
+
+.productImage {
+    height: 250px;
+    width: 250px;
 }
 
 .thumbnail,
 .caption {
     background-color: #5bc0de;
-    ;
+
 }
 
-#contactModalButton {
-    margin-top: -15%;
-    margin-left: 45%;
+
+#shoppingView {
+    margin-left: 10%;
 }
 
 .product {
     margin: 1%;
     display: inline-block;
+  
 }
 
 #customInfo {
@@ -56,29 +123,44 @@ p {
     margin-right: 5%;
 }
 
-.carousel-inner {
-    margin: 8%;
-    /*margin-left: 15%;*/
-    width: 100%
-}
 
 #ameeImage {
     margin-left: 5%;
-    width: 200px;
-    height: 300px;
+    max-width: 200px;
+    width: 100%;
+    height: 250px;
 }
 
 #pups {
     width: 320px;
-    height: 300px;
+    height: 250px;
     margin-left: 5%;
 
 }
 
+#viewShirt {
+    margin-left: 22%;
+    margin-top: 5%;
+}
+
+#wantButton {
+    margin-top: 5%;
+    margin-left: 16%;
+}
+
+#colorsButton {
+  margin-top: 5%;
+  margin-left: 21%;
+}
+
+#contactModalButton {
+    margin-left: 20%;
+    margin-top: -10%;
+}
 
 /*  this is for tablets */
 
-@media screen and (max-width: 980px) and (min-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (max-width: 980px) and (min-width: 551px) and (-webkit-min-device-pixel-ratio: 2) {
     body {
         display: flex;
         min-height: 100%;
@@ -109,12 +191,41 @@ p {
     margin-left: 35%;
     width: 100%
 }
+
+#sortBy {
+    margin-top: 4%;
+    margin-left: 60%;
+}
+
+#viewShirt {
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+#wantButton {
+    margin-top: 5%;
+    margin-left: 40%;
+}
+
+#colorsButton {
+  margin-top: 5%;
+    margin-left: 50%;
+}
+
+#contactModalButton {
+    margin-left: 20%;
+    margin-top: 0%;
+}
+
+.button {
+    display: inline-block;
+}
 }
 
 
 /*  this is for phones */
 
-@media screen and (max-width: 666px) and (min-width: 250px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (max-width: 550px) and (min-width: 250px) and (-webkit-min-device-pixel-ratio: 2) {
 
     body {
         display: flex;
@@ -128,7 +239,7 @@ p {
 
     #ameeImage {
         /*margin-left: 15%;*/
-        width: 200px;
+        width: 80%;
         height: 300px;
         display:block;
         margin-left: auto;
@@ -144,25 +255,52 @@ p {
 
     .product {
         margin: 1%;
-        margin-left: 15%;
+        margin-left: 0%;
         display: inline-block;
     }
 
-    #cartButton {
-        height: 90px;
-        margin-left: 5%;
-    }
-
-    #contactModalButton {
-        margin-top: -5%;
-        margin-left: 35%;
-        margin-bottom: 3%;
-    }
-
+   
     #customInfo {
         margin-top: 15%;
         margin-right: 0%;
     }
+    
+    #initialView {
+        margin: 3%;
+        margin-top: -5%;
+    }
+    
+    #sortBy {
+    margin-top: 8%;
+    margin-left: 0%;
+}
 
+#viewShirt {
+    margin-left: 20%;
+    margin-top: 5%;
+}
 
+#wantButton {
+    margin-top: 5%;
+    margin-left: 25%;
+}
+
+#colorsButton {
+  margin-top: 5%;
+    margin-left: 15%;
+}
+
+#contactModalButton {
+    margin-left: 35%;
+    margin-top: -2%;
+}
+
+#shoppingCart {
+    margin-top: -5%;
+}
+
+.colors {
+    height: 80px;
+    width: 80px;
+}
 }

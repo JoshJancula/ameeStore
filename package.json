@@ -18,9 +18,12 @@
   },
   "homepage": "https://github.com/JoshJancula/ameeStore#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
     "connect-busboy": "0.0.2",
     "express": "^4.16.3",
+    "firebase": "^4.13.1",
     "fs": "0.0.1-security",
     "nodemailer": "^4.6.4",
     "path": "^0.12.7"
