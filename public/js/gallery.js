@@ -7,6 +7,7 @@ window.onload = function() {
     $("#contactModalButton").hide();
     $("#sortBy").hide();
     $("#viewShirt").hide();
+    $('#scrollUp').hide();
     // get all product info
     $.ajax("/api/products/", {
         type: "GET",
@@ -124,6 +125,7 @@ $("#switchView").on("click", function(event) {
     $('#viewShirt').show();
     $('#colorsButton').show();
     $('#wantButton').show();
+    $('#scrollUp').show();
 });
 
 
